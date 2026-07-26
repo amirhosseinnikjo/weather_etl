@@ -4,8 +4,8 @@ import logging
 
 def load_data(data: dict) -> None:
     try:
-        conn = duckdb.connect("Weather.duckdb")
-        conn.execute("""CREATE TABLE  IF NOT EXIT weather(
+        conn = duckdb.connect("database/Weather.duckdb")
+        conn.execute("""CREATE TABLE  IF NOT EXISTS weather(
                         time TEXT,
                         temperature DOUBLE,
                         humidity INTEGER,

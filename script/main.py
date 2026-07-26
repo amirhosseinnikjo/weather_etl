@@ -6,8 +6,8 @@ import logging
 
 def main() -> None:
     data = extract_data()
-    transform_data = transform_data(data)
-    load_data(transform_data)
+    transformed_data = transform_data(data)
+    load_data(transformed_data)
 
 
 if __name__ == "__main__":
