@@ -28,5 +28,5 @@ if __name__ == "__main__":
     from extract import extract_data
 
     data = extract_data()
-    transform_data = transform_data(data)
-    print(transform_data)
+    df = transform_data(data)
+    print(df)
